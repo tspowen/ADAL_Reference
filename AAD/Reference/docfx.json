@@ -32,9 +32,4 @@
     ],
     "dest": "_site"
   },
-  "render": {
-    "theme": "hyde",
-    "dest": "_output"
-  },
-  "basepath": "/AAD"
 }
