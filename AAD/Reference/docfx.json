@@ -10,6 +10,20 @@
         ]
       }
     ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp",
+          "**/*_themes/**"
+        ],
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
+    ],
     "globalMetadata": {
       "breadcrumb_path": "/CapsToOpsTest_EMS/v1/toc.json"
     },
