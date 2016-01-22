@@ -12,5 +12,9 @@
       }
     }
   ],
-  "notification_subscribers": []
+  "notification_subscribers": [
+    "renzeyu@microsoft.com",
+    "yih@microsoft.com",
+    "binliu@microsoft.com"
+  ]
 }
