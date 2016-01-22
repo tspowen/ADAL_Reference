@@ -1,0 +1,140 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType
+  id: UserIdentifierType
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  children:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType.OptionalDisplayableId
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType.RequiredDisplayableId
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType.UniqueId
+  langs:
+  - csharp
+  - vb
+  name: UserIdentifierType
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType
+  type: Enum
+  source:
+    remote:
+      path: src/ADAL.Common/UserIdentifier.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/UserIdentifier.cs
+    startLine: 25
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Indicates the type of <xref href="Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public enum UserIdentifierType
+    content.vb: Public Enum UserIdentifierType
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType.UniqueId
+  id: UniqueId
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType
+  langs:
+  - csharp
+  - vb
+  name: UniqueId
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType.UniqueId
+  type: Field
+  source:
+    remote:
+      path: src/ADAL.Common/UserIdentifier.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/UserIdentifier.cs
+    startLine: 31
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: >-
+    When a <xref href="Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier" data-throw-if-not-resolved="false"></xref> of this type is passed in a token acquisition operation,
+
+    the operation is guaranteed to return a token issued for the user with corresponding <xref href="Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier.UniqueId" data-throw-if-not-resolved="false"></xref> or fail.
+  example: []
+  syntax:
+    content: UniqueId = 0
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType.OptionalDisplayableId
+  id: OptionalDisplayableId
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType
+  langs:
+  - csharp
+  - vb
+  name: OptionalDisplayableId
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType.OptionalDisplayableId
+  type: Field
+  source:
+    remote:
+      path: src/ADAL.Common/UserIdentifier.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/UserIdentifier.cs
+    startLine: 37
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: >-
+    When a <xref href="Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier" data-throw-if-not-resolved="false"></xref> of this type is passed in a token acquisition operation,
+
+    the operation restricts cache matches to the value provided and injects it as a hint in the authentication experience. However the end user could overwrite that value, resulting in a token issued to a different account than the one specified in the <xref href="Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier" data-throw-if-not-resolved="false"></xref> in input.
+  example: []
+  syntax:
+    content: OptionalDisplayableId = 1
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType.RequiredDisplayableId
+  id: RequiredDisplayableId
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType
+  langs:
+  - csharp
+  - vb
+  name: RequiredDisplayableId
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifierType.RequiredDisplayableId
+  type: Field
+  source:
+    remote:
+      path: src/ADAL.Common/UserIdentifier.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/UserIdentifier.cs
+    startLine: 43
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: >-
+    When a <xref href="Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier" data-throw-if-not-resolved="false"></xref> of this type is passed in a token acquisition operation,
+
+    the operation is guaranteed to return a token issued for the user with corresponding <xref href="Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier.DisplayableId" data-throw-if-not-resolved="false"></xref> (UPN or email) or fail
+  example: []
+  syntax:
+    content: RequiredDisplayableId = 2
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: UserIdentifier
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier.UniqueId
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier.DisplayableId
+metadata: {}

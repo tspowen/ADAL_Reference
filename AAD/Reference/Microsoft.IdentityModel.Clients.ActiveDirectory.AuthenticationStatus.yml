@@ -1,0 +1,120 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus
+  id: AuthenticationStatus
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  children:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus.ClientError
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus.ServiceError
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus.Success
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationStatus
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus
+  type: Enum
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+    startLine: 26
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Represents the outcome of one authentication operation.
+  example: []
+  syntax:
+    content: public enum AuthenticationStatus
+    content.vb: Public Enum AuthenticationStatus
+  platform:
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus.Success
+  id: Success
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus
+  langs:
+  - csharp
+  - vb
+  name: Success
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus.Success
+  type: Field
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+    startLine: 31
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Authentication Success.
+  example: []
+  syntax:
+    content: Success = 0
+  platform:
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus.ClientError
+  id: ClientError
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus
+  langs:
+  - csharp
+  - vb
+  name: ClientError
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus.ClientError
+  type: Field
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+    startLine: 36
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Authentication failed due to error on client side.
+  example: []
+  syntax:
+    content: ClientError = -1
+  platform:
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus.ServiceError
+  id: ServiceError
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus
+  langs:
+  - csharp
+  - vb
+  name: ServiceError
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus.ServiceError
+  type: Field
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+    startLine: 41
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Authentication failed due to error returned by service.
+  example: []
+  syntax:
+    content: ServiceError = -2
+  platform:
+  - rt
+  - sl
+  - wp8
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory
+metadata: {}

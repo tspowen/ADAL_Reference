@@ -1,0 +1,224 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel
+  id: AdalTraceLevel
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  children:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Critical
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Error
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Informational
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.LogAlways
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.None
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Verbose
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Warning
+  langs:
+  - csharp
+  - vb
+  name: AdalTraceLevel
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel
+  type: Enum
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AdalTrace.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AdalTrace.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Trace level for logging.
+  example: []
+  syntax:
+    content: public enum AdalTraceLevel
+    content.vb: Public Enum AdalTraceLevel
+  platform:
+  - rt
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.None
+  id: None
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel
+  langs:
+  - csharp
+  - vb
+  name: None
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.None
+  type: Field
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AdalTrace.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AdalTrace.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: None
+  example: []
+  syntax:
+    content: None = 0
+  platform:
+  - rt
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Critical
+  id: Critical
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel
+  langs:
+  - csharp
+  - vb
+  name: Critical
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Critical
+  type: Field
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AdalTrace.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AdalTrace.cs
+    startLine: 54
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Critical
+  example: []
+  syntax:
+    content: Critical = 1
+  platform:
+  - rt
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Error
+  id: Error
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel
+  langs:
+  - csharp
+  - vb
+  name: Error
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Error
+  type: Field
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AdalTrace.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AdalTrace.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Error
+  example: []
+  syntax:
+    content: Error = 2
+  platform:
+  - rt
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Warning
+  id: Warning
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Warning
+  type: Field
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AdalTrace.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AdalTrace.cs
+    startLine: 62
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Warning
+  example: []
+  syntax:
+    content: Warning = 3
+  platform:
+  - rt
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Informational
+  id: Informational
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel
+  langs:
+  - csharp
+  - vb
+  name: Informational
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Informational
+  type: Field
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AdalTrace.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AdalTrace.cs
+    startLine: 66
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Informational
+  example: []
+  syntax:
+    content: Informational = 4
+  platform:
+  - rt
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Verbose
+  id: Verbose
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel
+  langs:
+  - csharp
+  - vb
+  name: Verbose
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.Verbose
+  type: Field
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AdalTrace.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AdalTrace.cs
+    startLine: 70
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Verbose
+  example: []
+  syntax:
+    content: Verbose = 5
+  platform:
+  - rt
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.LogAlways
+  id: LogAlways
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel
+  langs:
+  - csharp
+  - vb
+  name: LogAlways
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel.LogAlways
+  type: Field
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AdalTrace.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AdalTrace.cs
+    startLine: 74
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: LogAlways
+  example: []
+  syntax:
+    content: LogAlways = 6
+  platform:
+  - rt
+  - wp8
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory
+metadata: {}

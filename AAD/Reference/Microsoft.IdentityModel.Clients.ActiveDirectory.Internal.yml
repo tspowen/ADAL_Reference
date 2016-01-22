@@ -1,0 +1,65 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  id: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  children:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.IWebUI
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.SilentWindowsFormsAuthenticationDialog
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventHandler
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WindowsFormsWebAuthenticationDialog
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WindowsFormsWebAuthenticationDialogBase
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WindowsFormsWebAuthenticationDialogBase.DpiHelper
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  type: Namespace
+  source:
+    remote:
+      path: src/ADAL.NET/Web/IWebUIFactory.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET/Web/IWebUIFactory.cs
+    startLine: 18
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  platform:
+  - net40
+  - winform40
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.IWebUI
+  isExternal: false
+  name: IWebUI
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.IWebUI
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventHandler
+  isExternal: false
+  name: WebBrowserNavigateErrorEventHandler
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventHandler
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.SilentWindowsFormsAuthenticationDialog
+  isExternal: false
+  name: SilentWindowsFormsAuthenticationDialog
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.SilentWindowsFormsAuthenticationDialog
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  isExternal: false
+  name: WebBrowserNavigateErrorEventArgs
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WindowsFormsWebAuthenticationDialogBase
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  isExternal: false
+  name: WindowsFormsWebAuthenticationDialogBase
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WindowsFormsWebAuthenticationDialogBase
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WindowsFormsWebAuthenticationDialogBase.DpiHelper
+  isExternal: false
+  name: WindowsFormsWebAuthenticationDialogBase.DpiHelper
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WindowsFormsWebAuthenticationDialogBase.DpiHelper
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WindowsFormsWebAuthenticationDialog
+  isExternal: false
+  name: WindowsFormsWebAuthenticationDialog
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WindowsFormsWebAuthenticationDialog
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+metadata: {}

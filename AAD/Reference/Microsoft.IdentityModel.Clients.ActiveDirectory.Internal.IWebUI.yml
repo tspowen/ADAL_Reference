@@ -1,0 +1,115 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.IWebUI
+  id: IWebUI
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  children:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.IWebUI.Authenticate(System.Uri,System.Uri)
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.IWebUI.OwnerWindow
+  langs:
+  - csharp
+  - vb
+  name: IWebUI
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.IWebUI
+  type: Interface
+  source:
+    remote:
+      path: src/ADAL.NET/Web/IWebUI.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET/Web/IWebUI.cs
+    startLine: 26
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  summary: Interface for Authentication Dialog
+  example: []
+  syntax:
+    content: public interface IWebUI
+    content.vb: Public Interface IWebUI
+  platform:
+  - net40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.IWebUI.OwnerWindow
+  id: OwnerWindow
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.IWebUI
+  langs:
+  - csharp
+  - vb
+  name: OwnerWindow
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.IWebUI.OwnerWindow
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.NET/Web/IWebUI.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET/Web/IWebUI.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  example: []
+  syntax:
+    content: object OwnerWindow { get; set; }
+    content.vb: Property OwnerWindow As Object
+    parameters: []
+    return:
+      type: System.Object
+  platform:
+  - net40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.IWebUI.Authenticate(System.Uri,System.Uri)
+  id: Authenticate(System.Uri,System.Uri)
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.IWebUI
+  langs:
+  - csharp
+  - vb
+  name: Authenticate(Uri, Uri)
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.IWebUI.Authenticate(System.Uri, System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.NET/Web/IWebUI.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET/Web/IWebUI.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  example: []
+  syntax:
+    content: string Authenticate(Uri requestUri, Uri callbackUri)
+    content.vb: Function Authenticate(requestUri As Uri, callbackUri As Uri) As String
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    - id: callbackUri
+      type: System.Uri
+    return:
+      type: System.String
+  platform:
+  - net40
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+metadata: {}

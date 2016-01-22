@@ -1,0 +1,440 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs
+  id: TokenCacheNotificationArgs
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  children:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.ClientId
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.DisplayableId
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.Resource
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.TokenCache
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.UniqueId
+  langs:
+  - csharp
+  - vb
+  name: TokenCacheNotificationArgs
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs
+  type: Class
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCacheNotificationArgs.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCacheNotificationArgs.cs
+    startLine: 25
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Contains parameters used by the ADAL call accessing the cache.
+  example: []
+  syntax:
+    content: public sealed class TokenCacheNotificationArgs
+    content.vb: Public NotInheritable Class TokenCacheNotificationArgs
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.TokenCache
+  id: TokenCache
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs
+  langs:
+  - csharp
+  - vb
+  name: TokenCache
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.TokenCache
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCacheNotificationArgs.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCacheNotificationArgs.cs
+    startLine: 30
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the TokenCache
+  example: []
+  syntax:
+    content: public TokenCache TokenCache { get; }
+    content.vb: Public ReadOnly Property TokenCache As TokenCache
+    parameters: []
+    return:
+      type: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.ClientId
+  id: ClientId
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs
+  langs:
+  - csharp
+  - vb
+  name: ClientId
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.ClientId
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCacheNotificationArgs.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCacheNotificationArgs.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the ClientId.
+  example: []
+  syntax:
+    content: public string ClientId { get; }
+    content.vb: Public ReadOnly Property ClientId As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.Resource
+  id: Resource
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs
+  langs:
+  - csharp
+  - vb
+  name: Resource
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.Resource
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCacheNotificationArgs.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCacheNotificationArgs.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the Resource.
+  example: []
+  syntax:
+    content: public string Resource { get; }
+    content.vb: Public ReadOnly Property Resource As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.UniqueId
+  id: UniqueId
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs
+  langs:
+  - csharp
+  - vb
+  name: UniqueId
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.UniqueId
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCacheNotificationArgs.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCacheNotificationArgs.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the user's unique Id.
+  example: []
+  syntax:
+    content: public string UniqueId { get; }
+    content.vb: Public ReadOnly Property UniqueId As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.DisplayableId
+  id: DisplayableId
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs
+  langs:
+  - csharp
+  - vb
+  name: DisplayableId
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs.DisplayableId
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCacheNotificationArgs.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCacheNotificationArgs.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the user's displayable Id.
+  example: []
+  syntax:
+    content: public string DisplayableId { get; }
+    content.vb: Public ReadOnly Property DisplayableId As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: TokenCache
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+metadata: {}

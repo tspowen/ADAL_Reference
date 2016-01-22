@@ -1,0 +1,610 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException
+  id: AdalUserMismatchException
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  children:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.#ctor(System.String,System.String)
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.RequestedUser
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.ReturnedUser
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.ToString
+  langs:
+  - csharp
+  - vb
+  name: AdalUserMismatchException
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException
+  type: Class
+  source:
+    remote:
+      path: src/ADAL.Common/AdalUserMismatchException.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AdalUserMismatchException.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: The exception type thrown when user returned by service does not match user in the request.
+  example: []
+  syntax:
+    content: 'public class AdalUserMismatchException : AdalException, ISerializable, _Exception'
+    content.vb: Public Class AdalUserMismatchException Inherits AdalException Implements ISerializable, _Exception
+  inheritance:
+  - System.Object
+  - System.Exception
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  - System.Runtime.InteropServices._Exception
+  inheritedMembers:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.ErrorCode
+  - System.Exception.GetBaseException
+  - System.Exception.GetType
+  - System.Exception.Message
+  - System.Exception.Data
+  - System.Exception.InnerException
+  - System.Exception.TargetSite
+  - System.Exception.StackTrace
+  - System.Exception.HelpLink
+  - System.Exception.Source
+  - System.Exception.HResult
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+  platform:
+  - net40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException
+  langs:
+  - csharp
+  - vb
+  name: AdalUserMismatchException(String, String)
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.AdalUserMismatchException(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/ADAL.Common/AdalUserMismatchException.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AdalUserMismatchException.cs
+    startLine: 36
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Initializes a new instance of the exception class.
+  example: []
+  syntax:
+    content: public AdalUserMismatchException(string requestedUser, string returnedUser)
+    content.vb: Public Sub New(requestedUser As String, returnedUser As String)
+    parameters:
+    - id: requestedUser
+      type: System.String
+    - id: returnedUser
+      type: System.String
+  platform:
+  - net40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.RequestedUser
+  id: RequestedUser
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException
+  langs:
+  - csharp
+  - vb
+  name: RequestedUser
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.RequestedUser
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/AdalUserMismatchException.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AdalUserMismatchException.cs
+    startLine: 47
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the user requested from service.
+  example: []
+  syntax:
+    content: public string RequestedUser { get; }
+    content.vb: Public ReadOnly Property RequestedUser As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.ReturnedUser
+  id: ReturnedUser
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException
+  langs:
+  - csharp
+  - vb
+  name: ReturnedUser
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.ReturnedUser
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/AdalUserMismatchException.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AdalUserMismatchException.cs
+    startLine: 52
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the user returned by service.
+  example: []
+  syntax:
+    content: public string ReturnedUser { get; }
+    content.vb: Public ReadOnly Property ReturnedUser As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.ToString
+  id: ToString
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.Common/AdalUserMismatchException.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AdalUserMismatchException.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Creates and returns a string representation of the current exception.
+  example: []
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: A string representation of the current exception.
+  overridden: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.ToString
+  platform:
+  - net40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException
+  langs:
+  - csharp
+  - vb
+  name: AdalUserMismatchException(SerializationInfo, StreamingContext)
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.AdalUserMismatchException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/ADAL.Common/AdalUserMismatchException.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AdalUserMismatchException.cs
+    startLine: 69
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Initializes a new instance of the exception class with serialized data.
+  example: []
+  syntax:
+    content: protected AdalUserMismatchException(SerializationInfo info, StreamingContext context)
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The System.Runtime.Serialization.SerializationInfo that holds the serialized object data about the exception being thrown.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: The System.Runtime.Serialization.StreamingContext that contains contextual information about the source or destination.
+  platform:
+  - net40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalUserMismatchException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.Common/AdalUserMismatchException.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AdalUserMismatchException.cs
+    startLine: 81
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Sets the System.Runtime.Serialization.SerializationInfo with information about the exception.
+  example: []
+  syntax:
+    content: public override void GetObjectData(SerializationInfo info, StreamingContext context)
+    content.vb: Public Overrides Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The System.Runtime.Serialization.SerializationInfo that holds the serialized object data about the exception being thrown.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: The System.Runtime.Serialization.StreamingContext that contains contextual information about the source or destination.
+  overridden: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  platform:
+  - net40
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: AdalException
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.ErrorCode
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException
+  isExternal: false
+  name: ErrorCode
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.ErrorCode
+- uid: System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  name: GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  name: GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  name: Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  name: Data
+  fullName: System.Exception.Data
+- uid: System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  name: InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  name: TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  name: StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  name: HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  name: Source
+  fullName: System.Exception.Source
+- uid: System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  name: HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  name: SerializeObjectState
+  fullName: System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.ToString
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException
+  isExternal: false
+  name: ToString()
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.ToString()
+  spec.csharp:
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.ToString
+    name: ToString
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.ToString
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.ToString
+    name: ToString
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.ToString
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException
+  isExternal: true
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.GetObjectData
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalException.GetObjectData
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    fullName: )
+metadata: {}

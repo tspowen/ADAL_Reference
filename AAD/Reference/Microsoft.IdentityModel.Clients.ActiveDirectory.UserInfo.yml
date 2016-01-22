@@ -1,0 +1,604 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+  id: UserInfo
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  children:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.DisplayableId
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.FamilyName
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.GivenName
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.IdentityProvider
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.PasswordChangeUrl
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.PasswordExpiresOn
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.UniqueId
+  langs:
+  - csharp
+  - vb
+  name: UserInfo
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+  type: Class
+  source:
+    remote:
+      path: src/ADAL.Common/UserInfo.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/UserInfo.cs
+    startLine: 26
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Contains information of a single user. This information is used for token cache lookup. Also if created with userId, userId is sent to the service when login_hint is accepted.
+  example: []
+  syntax:
+    content: public sealed class UserInfo
+    content.vb: Public NotInheritable Class UserInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.UniqueId
+  id: UniqueId
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+  langs:
+  - csharp
+  - vb
+  name: UniqueId
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.UniqueId
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/UserInfo.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/UserInfo.cs
+    startLine: 47
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets identifier of the user authenticated during token acquisition.
+  example: []
+  syntax:
+    content: public string UniqueId { get; }
+    content.vb: Public ReadOnly Property UniqueId As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.DisplayableId
+  id: DisplayableId
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+  langs:
+  - csharp
+  - vb
+  name: DisplayableId
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.DisplayableId
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/UserInfo.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/UserInfo.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets a displayable value in UserPrincipalName (UPN) format. The value can be null.
+  example: []
+  syntax:
+    content: public string DisplayableId { get; }
+    content.vb: Public ReadOnly Property DisplayableId As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.GivenName
+  id: GivenName
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+  langs:
+  - csharp
+  - vb
+  name: GivenName
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.GivenName
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/UserInfo.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/UserInfo.cs
+    startLine: 59
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets given name of the user if provided by the service. If not, the value is null.
+  example: []
+  syntax:
+    content: public string GivenName { get; }
+    content.vb: Public ReadOnly Property GivenName As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.FamilyName
+  id: FamilyName
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+  langs:
+  - csharp
+  - vb
+  name: FamilyName
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.FamilyName
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/UserInfo.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/UserInfo.cs
+    startLine: 65
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets family name of the user if provided by the service. If not, the value is null.
+  example: []
+  syntax:
+    content: public string FamilyName { get; }
+    content.vb: Public ReadOnly Property FamilyName As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.PasswordExpiresOn
+  id: PasswordExpiresOn
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+  langs:
+  - csharp
+  - vb
+  name: PasswordExpiresOn
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.PasswordExpiresOn
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/UserInfo.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/UserInfo.cs
+    startLine: 71
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the time when the password expires. Default value is 0.
+  example: []
+  syntax:
+    content: public DateTimeOffset? PasswordExpiresOn { get; }
+    content.vb: Public ReadOnly Property PasswordExpiresOn As DateTimeOffset?
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.PasswordChangeUrl
+  id: PasswordChangeUrl
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+  langs:
+  - csharp
+  - vb
+  name: PasswordChangeUrl
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.PasswordChangeUrl
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/UserInfo.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/UserInfo.cs
+    startLine: 77
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the url where the user can change the expiring password. The value can be null.
+  example: []
+  syntax:
+    content: public Uri PasswordChangeUrl { get; }
+    content.vb: Public ReadOnly Property PasswordChangeUrl As Uri
+    parameters: []
+    return:
+      type: System.Uri
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.IdentityProvider
+  id: IdentityProvider
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+  langs:
+  - csharp
+  - vb
+  name: IdentityProvider
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo.IdentityProvider
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/UserInfo.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/UserInfo.cs
+    startLine: 83
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets identity provider if returned by the service. If not, the value is null.
+  example: []
+  syntax:
+    content: public string IdentityProvider { get; }
+    content.vb: Public ReadOnly Property IdentityProvider As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  name.vb: Nullable(Of DateTimeOffset)
+  fullName: System.Nullable<System.DateTimeOffset>
+  fullName.vb: System.Nullable(Of System.DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  name.vb: Nullable(Of T)
+  fullName: System.Nullable<T>
+  fullName.vb: System.Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: System.Nullable{DateTimeOffset}
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  name.vb: Nullable(Of DateTimeOffset)
+  fullName: System.Nullable<DateTimeOffset>
+  fullName.vb: System.Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: DateTimeOffset
+    name: DateTimeOffset
+    fullName: DateTimeOffset
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: DateTimeOffset
+    name: DateTimeOffset
+    fullName: DateTimeOffset
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: Uri
+  isExternal: true
+  name: Uri
+  fullName: Uri
+metadata: {}

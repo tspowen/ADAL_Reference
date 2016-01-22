@@ -1,0 +1,879 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  id: TokenCache
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  children:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.#ctor
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.#ctor(System.Byte[])
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.AfterAccess
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.BeforeAccess
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.BeforeWrite
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.Clear
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.Count
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.DefaultShared
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.DeleteItem(Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem)
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.Deserialize(System.Byte[])
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.HasStateChanged
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.ReadItems
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.Serialize
+  langs:
+  - csharp
+  - vb
+  name: TokenCache
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  type: Class
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Token cache class used by <xref href="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" data-throw-if-not-resolved="false"></xref> to store access and refresh tokens.
+  example: []
+  syntax:
+    content: public class TokenCache
+    content.vb: Public Class TokenCache
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.#ctor
+  id: '#ctor'
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  langs:
+  - csharp
+  - vb
+  name: TokenCache()
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.TokenCache()
+  type: Constructor
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 75
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Default constructor.
+  example: []
+  syntax:
+    content: public TokenCache()
+    content.vb: Public Sub New
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.#ctor(System.Byte[])
+  id: '#ctor(System.Byte[])'
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  langs:
+  - csharp
+  - vb
+  name: TokenCache(Byte[])
+  name.vb: TokenCache(Byte())
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.TokenCache(System.Byte[])
+  fullName.vb: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.TokenCache(System.Byte())
+  type: Constructor
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 83
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Constructor receiving state of the cache
+  example: []
+  syntax:
+    content: public TokenCache(byte[] state)
+    content.vb: Public Sub New(state As Byte())
+    parameters:
+    - id: state
+      type: System.Byte[]
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.DefaultShared
+  id: DefaultShared
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  langs:
+  - csharp
+  - vb
+  name: DefaultShared
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.DefaultShared
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 92
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Static token cache shared by all instances of AuthenticationContext which do not explicitly pass a cache instance during construction.
+  example: []
+  syntax:
+    content: public static TokenCache DefaultShared { get; }
+    content.vb: Public Shared ReadOnly Property DefaultShared As TokenCache
+    parameters: []
+    return:
+      type: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.BeforeAccess
+  id: BeforeAccess
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  langs:
+  - csharp
+  - vb
+  name: BeforeAccess
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.BeforeAccess
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 97
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Notification method called before any library method accesses the cache.
+  example: []
+  syntax:
+    content: public TokenCacheNotification BeforeAccess { get; set; }
+    content.vb: Public Property BeforeAccess As TokenCacheNotification
+    parameters: []
+    return:
+      type: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotification
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.BeforeWrite
+  id: BeforeWrite
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  langs:
+  - csharp
+  - vb
+  name: BeforeWrite
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.BeforeWrite
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 104
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: >-
+    Notification method called before any library method writes to the cache. This notification can be used to reload
+
+    the cache state from a row in database and lock that row. That database row can then be unlocked in <xref href="Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.AfterAccess" data-throw-if-not-resolved="false"></xref> notification.
+  example: []
+  syntax:
+    content: public TokenCacheNotification BeforeWrite { get; set; }
+    content.vb: Public Property BeforeWrite As TokenCacheNotification
+    parameters: []
+    return:
+      type: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotification
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.AfterAccess
+  id: AfterAccess
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  langs:
+  - csharp
+  - vb
+  name: AfterAccess
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.AfterAccess
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 109
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Notification method called after any library method accesses the cache.
+  example: []
+  syntax:
+    content: public TokenCacheNotification AfterAccess { get; set; }
+    content.vb: Public Property AfterAccess As TokenCacheNotification
+    parameters: []
+    return:
+      type: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotification
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.HasStateChanged
+  id: HasStateChanged
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  langs:
+  - csharp
+  - vb
+  name: HasStateChanged
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.HasStateChanged
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 115
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: >-
+    Gets or sets the flag indicating whether cache state has changed. ADAL methods set this flag after any change. Caller application should reset
+
+    the flag after serializing and persisting the state of the cache.
+  example: []
+  syntax:
+    content: public bool HasStateChanged { get; set; }
+    content.vb: Public Property HasStateChanged As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.Count
+  id: Count
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  langs:
+  - csharp
+  - vb
+  name: Count
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.Count
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 131
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the nunmber of items in the cache.
+  example: []
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.Serialize
+  id: Serialize
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  langs:
+  - csharp
+  - vb
+  name: Serialize()
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.Serialize()
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 144
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: >-
+    Serializes current state of the cache as a blob. Caller application can persist the blob and update the state of the cache later by
+
+    passing that blob back in constructor or by calling method Deserialize.
+  example: []
+  syntax:
+    content: public byte[] Serialize()
+    content.vb: Public Function Serialize As Byte()
+    return:
+      type: System.Byte[]
+      description: Current state of the cache as a blob
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.Deserialize(System.Byte[])
+  id: Deserialize(System.Byte[])
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(Byte[])
+  name.vb: Deserialize(Byte())
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.Deserialize(System.Byte[])
+  fullName.vb: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.Deserialize(System.Byte())
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 169
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Deserializes state of the cache. The state should be the blob received earlier by calling the method Serialize.
+  example: []
+  syntax:
+    content: public void Deserialize(byte[] state)
+    content.vb: Public Sub Deserialize(state As Byte())
+    parameters:
+    - id: state
+      type: System.Byte[]
+      description: State of the cache as a blob
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.ReadItems
+  id: ReadItems
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  langs:
+  - csharp
+  - vb
+  name: ReadItems()
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.ReadItems()
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 214
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Reads a copy of the list of all items in the cache.
+  example: []
+  syntax:
+    content: public virtual IEnumerable<TokenCacheItem> ReadItems()
+    content.vb: Public Overridable Function ReadItems As IEnumerable(Of TokenCacheItem)
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem}
+      description: The items in the cache
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.DeleteItem(Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem)
+  id: DeleteItem(Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem)
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  langs:
+  - csharp
+  - vb
+  name: DeleteItem(TokenCacheItem)
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.DeleteItem(Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem)
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 238
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Deletes an item from the cache.
+  example: []
+  syntax:
+    content: public virtual void DeleteItem(TokenCacheItem item)
+    content.vb: Public Overridable Sub DeleteItem(item As TokenCacheItem)
+    parameters:
+    - id: item
+      type: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem
+      description: The item to delete from the cache
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.Clear
+  id: Clear
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.Common/TokenCache.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/TokenCache.cs
+    startLine: 275
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: >-
+    Clears the cache by deleting all the items. Note that if the cache is the default shared cache, clearing it would
+
+    impact all the instances of <xref href="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" data-throw-if-not-resolved="false"></xref> which share that cache.
+  example: []
+  syntax:
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext
+  isExternal: false
+  name: AuthenticationContext
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: TokenCache
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotification
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: TokenCacheNotification
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotification
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache.AfterAccess
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.IEnumerable{Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TokenCacheItem>
+  name.vb: IEnumerable(Of TokenCacheItem)
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem
+    name: TokenCacheItem
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem
+    name: TokenCacheItem
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: TokenCacheItem
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem
+- uid: IEnumerable{Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem}
+  definition: IEnumerable`1
+  href: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem.yml
+  name: IEnumerable<TokenCacheItem>
+  name.vb: IEnumerable(Of TokenCacheItem)
+  fullName: IEnumerable<Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem>
+  fullName.vb: IEnumerable(Of Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem
+    name: TokenCacheItem
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem
+    href: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem
+    name: TokenCacheItem
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem
+    href: Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheItem.yml
+  - name: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  name.vb: IEnumerable(Of )
+  fullName: IEnumerable<>
+  fullName.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )
+metadata: {}

@@ -1,0 +1,410 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace
+  id: AdalTrace
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  children:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace.AdalLoggingChannel
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace.LegacyTraceSwitch
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace.Level
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: AdalTrace
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace
+  type: Class
+  source:
+    remote:
+      path: src/ADAL.NET/AdalTrace.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET/AdalTrace.cs
+    startLine: 25
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: This class manages tracing in ADAL.
+  example: []
+  syntax:
+    content: public class AdalTrace
+    content.vb: Public Class AdalTrace
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace.TraceSource
+  id: TraceSource
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace
+  langs:
+  - csharp
+  - vb
+  name: TraceSource
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace.TraceSource
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.NET/AdalTrace.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET/AdalTrace.cs
+    startLine: 36
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Sets/gets the TraceSource that ADAL writes events to which has the name Microsoft.IdentityModel.Clients.ActiveDirectory.
+  example: []
+  syntax:
+    content: public static TraceSource TraceSource { get; }
+    content.vb: Public Shared ReadOnly Property TraceSource As TraceSource
+    parameters: []
+    return:
+      type: System.Diagnostics.TraceSource
+  platform:
+  - net40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace.LegacyTraceSwitch
+  id: LegacyTraceSwitch
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace
+  langs:
+  - csharp
+  - vb
+  name: LegacyTraceSwitch
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace.LegacyTraceSwitch
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.NET/AdalTrace.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET/AdalTrace.cs
+    startLine: 41
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Enables/disables basic tracing using class System.Diagnostics.Trace.
+  example: []
+  syntax:
+    content: public static TraceSwitch LegacyTraceSwitch { get; }
+    content.vb: Public Shared ReadOnly Property LegacyTraceSwitch As TraceSwitch
+    parameters: []
+    return:
+      type: System.Diagnostics.TraceSwitch
+  platform:
+  - net40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace.Level
+  id: Level
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace
+  langs:
+  - csharp
+  - vb
+  name: Level
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace.Level
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AdalTrace.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AdalTrace.cs
+    startLine: 30
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Sets/gets trace level. If set to None, it disables the logging.
+  example: []
+  syntax:
+    content: public static AdalTraceLevel Level { get; set; }
+    content.vb: Public Shared Property Level As AdalTraceLevel
+    parameters: []
+    return:
+      type: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel
+  platform:
+  - rt
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace.AdalLoggingChannel
+  id: AdalLoggingChannel
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace
+  href: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace.yml
+  langs:
+  - csharp
+  - vb
+  name: AdalLoggingChannel
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace.AdalLoggingChannel
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.WinPhoneSL/AdalTrace.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.WinPhoneSL/AdalTrace.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the ADAL's Logging channel.
+  example: []
+  syntax:
+    content: public static LoggingChannel AdalLoggingChannel { get; }
+    content.vb: Public Shared ReadOnly Property AdalLoggingChannel As LoggingChannel
+    parameters: []
+    return:
+      type: LoggingChannel
+  platform:
+  - sl
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Diagnostics.TraceSource
+  parent: System.Diagnostics
+  isExternal: true
+  name: TraceSource
+  fullName: System.Diagnostics.TraceSource
+- uid: System.Diagnostics
+  isExternal: false
+  name: System.Diagnostics
+  fullName: System.Diagnostics
+- uid: System.Diagnostics.TraceSwitch
+  parent: System.Diagnostics
+  isExternal: true
+  name: TraceSwitch
+  fullName: System.Diagnostics.TraceSwitch
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: AdalTraceLevel
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTraceLevel
+- uid: LoggingChannel
+  isExternal: true
+  name: LoggingChannel
+  fullName: LoggingChannel
+metadata: {}

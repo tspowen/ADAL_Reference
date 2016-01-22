@@ -1,0 +1,806 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  id: AuthenticationResult
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  children:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.AccessToken
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.AccessTokenType
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.CreateAuthorizationHeader
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.Deserialize(System.String)
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.Error
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.ErrorDescription
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.ExpiresOn
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.IdToken
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.IsMultipleResourceRefreshToken
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.RefreshToken
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.Serialize
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.Status
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.StatusCode
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.TenantId
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.UserInfo
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationResult
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  type: Class
+  source:
+    remote:
+      path: src/ADAL.NET/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET/AuthenticationResult.cs
+    startLine: 25
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Contains the results of one token acquisition operation.
+  example: []
+  syntax:
+    content: public sealed class AuthenticationResult
+    content.vb: Public NotInheritable Class AuthenticationResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.AccessTokenType
+  id: AccessTokenType
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: AccessTokenType
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.AccessTokenType
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationResult.cs
+    startLine: 51
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the type of the Access Token returned.
+  example: []
+  syntax:
+    content: public string AccessTokenType { get; }
+    content.vb: Public ReadOnly Property AccessTokenType As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.AccessToken
+  id: AccessToken
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: AccessToken
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.AccessToken
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationResult.cs
+    startLine: 57
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the Access Token requested.
+  example: []
+  syntax:
+    content: public string AccessToken { get; }
+    content.vb: Public ReadOnly Property AccessToken As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.RefreshToken
+  id: RefreshToken
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: RefreshToken
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.RefreshToken
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationResult.cs
+    startLine: 63
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: 'Gets the Refresh Token associated with the requested Access Token. Note: not all operations will return a Refresh Token.'
+  example: []
+  syntax:
+    content: public string RefreshToken { get; }
+    content.vb: Public ReadOnly Property RefreshToken As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.ExpiresOn
+  id: ExpiresOn
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: ExpiresOn
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.ExpiresOn
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationResult.cs
+    startLine: 70
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: >-
+    Gets the point in time in which the Access Token returned in the AccessToken property ceases to be valid.
+
+    This value is calculated based on current UTC time measured locally and the value expiresIn received from the service.
+  example: []
+  syntax:
+    content: public DateTimeOffset ExpiresOn { get; }
+    content.vb: Public ReadOnly Property ExpiresOn As DateTimeOffset
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.TenantId
+  id: TenantId
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: TenantId
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.TenantId
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationResult.cs
+    startLine: 76
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets an identifier for the tenant the token was acquired from. This property will be null if tenant information is not returned by the service.
+  example: []
+  syntax:
+    content: public string TenantId { get; }
+    content.vb: Public ReadOnly Property TenantId As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.UserInfo
+  id: UserInfo
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: UserInfo
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.UserInfo
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationResult.cs
+    startLine: 82
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets user information including user Id. Some elements in UserInfo might be null if not returned by the service.
+  example: []
+  syntax:
+    content: public UserInfo UserInfo { get; }
+    content.vb: Public ReadOnly Property UserInfo As UserInfo
+    parameters: []
+    return:
+      type: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.IdToken
+  id: IdToken
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: IdToken
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.IdToken
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationResult.cs
+    startLine: 88
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the entire Id Token if returned by the service or null if no Id Token is returned.
+  example: []
+  syntax:
+    content: public string IdToken { get; }
+    content.vb: Public ReadOnly Property IdToken As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.IsMultipleResourceRefreshToken
+  id: IsMultipleResourceRefreshToken
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: IsMultipleResourceRefreshToken
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.IsMultipleResourceRefreshToken
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationResult.cs
+    startLine: 94
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets a value indicating whether the refresh token can be used for requesting access token for other resources.
+  example: []
+  syntax:
+    content: public bool IsMultipleResourceRefreshToken { get; }
+    content.vb: Public ReadOnly Property IsMultipleResourceRefreshToken As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.Deserialize(System.String)
+  id: Deserialize(System.String)
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(String)
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.Deserialize(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationResult.cs
+    startLine: 101
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Serializes the object to a JSON string
+  example: []
+  syntax:
+    content: public static AuthenticationResult Deserialize(string serializedObject)
+    content.vb: Public Shared Function Deserialize(serializedObject As String) As AuthenticationResult
+    parameters:
+    - id: serializedObject
+      type: System.String
+    return:
+      type: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+      description: Deserialized authentication result
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.CreateAuthorizationHeader
+  id: CreateAuthorizationHeader
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: CreateAuthorizationHeader()
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.CreateAuthorizationHeader()
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationResult.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Creates authorization header from authentication result.
+  example: []
+  syntax:
+    content: public string CreateAuthorizationHeader()
+    content.vb: Public Function CreateAuthorizationHeader As String
+    return:
+      type: System.String
+      description: Created authorization header
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.Serialize
+  id: Serialize
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: Serialize()
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.Serialize()
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationResult.cs
+    startLine: 127
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Serializes the object to a JSON string
+  example: []
+  syntax:
+    content: public string Serialize()
+    content.vb: Public Function Serialize As String
+    return:
+      type: System.String
+      description: Serialized authentication result
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.Status
+  id: Status
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: Status
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.Status
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+    startLine: 86
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets the outcome of the token acquisition operation.
+  example: []
+  syntax:
+    content: public AuthenticationStatus Status { get; }
+    content.vb: Public ReadOnly Property Status As AuthenticationStatus
+    parameters: []
+    return:
+      type: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus
+  platform:
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.Error
+  id: Error
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: Error
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.Error
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+    startLine: 92
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets provides error type in case of error.
+  example: []
+  syntax:
+    content: public string Error { get; }
+    content.vb: Public ReadOnly Property Error As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.ErrorDescription
+  id: ErrorDescription
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: ErrorDescription
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.ErrorDescription
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+    startLine: 98
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets detailed information in case of error.
+  example: []
+  syntax:
+    content: public string ErrorDescription { get; }
+    content.vb: Public ReadOnly Property ErrorDescription As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.StatusCode
+  id: StatusCode
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: StatusCode
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.StatusCode
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AuthenticationResult.cs
+    startLine: 106
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: >-
+    Gets the status code returned from http layer if any error happens. This status code is either the HttpStatusCode in the inner WebException response or
+
+    NavigateError Event Status Code in browser based flow (See http://msdn.microsoft.com/en-us/library/bb268233(v=vs.85).aspx).
+
+    You can use this code for purposes such as implementing retry logic or error investigation.
+  example: []
+  syntax:
+    content: public int StatusCode { get; set; }
+    content.vb: Public Property StatusCode As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  platform:
+  - rt
+  - sl
+  - wp8
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: UserInfo
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: AuthenticationResult
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: AuthenticationStatus
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationStatus
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: DateTimeOffset
+  isExternal: true
+  name: DateTimeOffset
+  fullName: DateTimeOffset
+metadata: {}

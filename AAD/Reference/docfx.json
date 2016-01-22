@@ -3,27 +3,24 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**"
         ]
       }
     ],
-    "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**"
-        ]
-      }
-    ],
+    "globalMetadata": {
+      "breadcrumb_path": "/CapsToOpsTest_EMS/v1/toc.json"
+    },
     "template": [
-      "op.html"
+      "docs.html"
     ],
-    "dest": "AAD/Reference"
-  }
+    "dest": "_site"
+  },
+  "render": {
+    "theme": "hyde",
+    "dest": "_output"
+  },
+  "basepath": "/ATA"
 }

@@ -1,0 +1,697 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+  id: AuthenticationParameters
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  children:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.Authority
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromResourceUrlAsync(System.Uri)
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromResourceUrlAsync(Uri)
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromResponseAuthenticateHeader(System.String)
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromUnauthorizedResponse(System.Net.HttpWebResponse)
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.Resource
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationParameters
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+  type: Class
+  source:
+    remote:
+      path: src/ADAL.NET/AuthenticationParameters.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET/AuthenticationParameters.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Contains authentication parameters based on unauthorized response from resource server.
+  example: []
+  syntax:
+    content: public sealed class AuthenticationParameters
+    content.vb: Public NotInheritable Class AuthenticationParameters
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.Authority
+  id: Authority
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+  langs:
+  - csharp
+  - vb
+  name: Authority
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.Authority
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationParameters.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationParameters.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets or sets the address of the authority to issue token.
+  example: []
+  syntax:
+    content: public string Authority { get; set; }
+    content.vb: Public Property Authority As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.Resource
+  id: Resource
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+  langs:
+  - csharp
+  - vb
+  name: Resource
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.Resource
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationParameters.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationParameters.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Gets or sets the identifier of the target resource that is the recipient of the requested token.
+  example: []
+  syntax:
+    content: public string Resource { get; set; }
+    content.vb: Public Property Resource As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromResponseAuthenticateHeader(System.String)
+  id: CreateFromResponseAuthenticateHeader(System.String)
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+  langs:
+  - csharp
+  - vb
+  name: CreateFromResponseAuthenticateHeader(String)
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromResponseAuthenticateHeader(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.Common/AuthenticationParameters.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.Common/AuthenticationParameters.cs
+    startLine: 51
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: Creates authentication parameters from the WWW-Authenticate header in response received from resource. This method expects the header to contain authentication parameters.
+  example: []
+  syntax:
+    content: public static AuthenticationParameters CreateFromResponseAuthenticateHeader(string authenticateHeader)
+    content.vb: Public Shared Function CreateFromResponseAuthenticateHeader(authenticateHeader As String) As AuthenticationParameters
+    parameters:
+    - id: authenticateHeader
+      type: System.String
+      description: Content of header WWW-Authenticate header
+    return:
+      type: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+      description: AuthenticationParameters object containing authentication parameters
+  platform:
+  - net40
+  - rt
+  - sl
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromResourceUrlAsync(System.Uri)
+  id: CreateFromResourceUrlAsync(System.Uri)
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+  langs:
+  - csharp
+  - vb
+  name: CreateFromResourceUrlAsync(Uri)
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromResourceUrlAsync(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.NET/AuthenticationParameters.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET/AuthenticationParameters.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: >-
+    Creates authentication parameters from address of the resource. This method expects the resource server to return unauthorized response
+
+    with WWW-Authenticate header containing authentication parameters.
+  example: []
+  syntax:
+    content: public static Task<AuthenticationParameters> CreateFromResourceUrlAsync(Uri resourceUrl)
+    content.vb: Public Shared Function CreateFromResourceUrlAsync(resourceUrl As Uri) As Task(Of AuthenticationParameters)
+    parameters:
+    - id: resourceUrl
+      type: System.Uri
+      description: Address of the resource
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters}
+      description: AuthenticationParameters object containing authentication parameters
+  platform:
+  - net40
+  - rt
+  - wp8
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromUnauthorizedResponse(System.Net.HttpWebResponse)
+  id: CreateFromUnauthorizedResponse(System.Net.HttpWebResponse)
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+  langs:
+  - csharp
+  - vb
+  name: CreateFromUnauthorizedResponse(HttpWebResponse)
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromUnauthorizedResponse(System.Net.HttpWebResponse)
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.NET/AuthenticationParameters.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET/AuthenticationParameters.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: >-
+    Creates authentication parameters from the response received from the response received from the resource. This method expects the response to have unauthorized status and
+
+    WWW-Authenticate header containing authentication parameters.
+  example: []
+  syntax:
+    content: public static AuthenticationParameters CreateFromUnauthorizedResponse(HttpWebResponse response)
+    content.vb: Public Shared Function CreateFromUnauthorizedResponse(response As HttpWebResponse) As AuthenticationParameters
+    parameters:
+    - id: response
+      type: System.Net.HttpWebResponse
+      description: Response received from the resource.
+    return:
+      type: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+      description: AuthenticationParameters object containing authentication parameters
+  platform:
+  - net40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromResourceUrlAsync(Uri)
+  id: CreateFromResourceUrlAsync(Uri)
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+  href: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.yml
+  langs:
+  - csharp
+  - vb
+  name: CreateFromResourceUrlAsync(Uri)
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromResourceUrlAsync(Uri)
+  type: Method
+  source:
+    remote:
+      path: src/ADAL.CommonWinRT/AuthenticationParameters.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.CommonWinRT/AuthenticationParameters.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory
+  summary: >-
+    Creates authentication parameters from address of the resource. This method expects the resource server to return unauthorized response
+
+    with WWW-Authenticate header containing authentication parameters.
+  example: []
+  syntax:
+    content: public static IAsyncOperation<AuthenticationParameters> CreateFromResourceUrlAsync(Uri resourceUrl)
+    content.vb: Public Shared Function CreateFromResourceUrlAsync(resourceUrl As Uri) As IAsyncOperation(Of AuthenticationParameters)
+    parameters:
+    - id: resourceUrl
+      type: Uri
+      description: Address of the resource
+    return:
+      type: IAsyncOperation{Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters}
+      description: AuthenticationParameters object containing authentication parameters
+  platform:
+  - sl
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory
+  isExternal: false
+  name: AuthenticationParameters
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: System.Threading.Tasks.Task{Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AuthenticationParameters>
+  name.vb: Task(Of AuthenticationParameters)
+  fullName: System.Threading.Tasks.Task<Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters>
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+    name: AuthenticationParameters
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+    name: AuthenticationParameters
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  name.vb: Task(Of TResult)
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Net.HttpWebResponse
+  parent: System.Net
+  isExternal: true
+  name: HttpWebResponse
+  fullName: System.Net.HttpWebResponse
+- uid: System.Net
+  isExternal: false
+  name: System.Net
+  fullName: System.Net
+- uid: Windows.Foundation.IAsyncOperation{Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperation`1
+  name: IAsyncOperation<AuthenticationParameters>
+  name.vb: IAsyncOperation(Of AuthenticationParameters)
+  fullName: Windows.Foundation.IAsyncOperation<Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters>
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    fullName: Windows.Foundation.IAsyncOperation
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+    name: AuthenticationParameters
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    fullName: Windows.Foundation.IAsyncOperation
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+    name: AuthenticationParameters
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+  - name: )
+    fullName: )
+- uid: Windows.Foundation.IAsyncOperation`1
+  parent: Windows.Foundation
+  isExternal: true
+  name: IAsyncOperation<TResult>
+  name.vb: IAsyncOperation(Of TResult)
+  fullName: Windows.Foundation.IAsyncOperation<TResult>
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    fullName: Windows.Foundation.IAsyncOperation
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    fullName: Windows.Foundation.IAsyncOperation
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: Windows.Foundation
+  isExternal: false
+  name: Windows.Foundation
+  fullName: Windows.Foundation
+- uid: Uri
+  isExternal: true
+  name: Uri
+  fullName: Uri
+- uid: IAsyncOperation{Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters}
+  definition: IAsyncOperation`1
+  href: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.yml
+  name: IAsyncOperation<AuthenticationParameters>
+  name.vb: IAsyncOperation(Of AuthenticationParameters)
+  fullName: IAsyncOperation<Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters>
+  fullName.vb: IAsyncOperation(Of Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters)
+  spec.csharp:
+  - uid: IAsyncOperation`1
+    name: IAsyncOperation
+    fullName: IAsyncOperation
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+    name: AuthenticationParameters
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+    href: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IAsyncOperation`1
+    name: IAsyncOperation
+    fullName: IAsyncOperation
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+    name: AuthenticationParameters
+    fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters
+    href: Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.yml
+  - name: )
+    fullName: )
+- uid: IAsyncOperation`1
+  isExternal: true
+  name: IAsyncOperation<>
+  name.vb: IAsyncOperation(Of )
+  fullName: IAsyncOperation<>
+  fullName.vb: IAsyncOperation(Of )
+  spec.csharp:
+  - uid: IAsyncOperation`1
+    name: IAsyncOperation
+    fullName: IAsyncOperation
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IAsyncOperation`1
+    name: IAsyncOperation
+    fullName: IAsyncOperation
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )
+metadata: {}

@@ -1,0 +1,444 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs
+  id: WebBrowserNavigateErrorEventArgs
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  children:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.#ctor(System.String,System.String,System.Int32,System.Object)
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.StatusCode
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.TargetFrameName
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.Url
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.WebBrowserActiveXInstance
+  langs:
+  - csharp
+  - vb
+  name: WebBrowserNavigateErrorEventArgs
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs
+  type: Class
+  source:
+    remote:
+      path: src/ADAL.NET.WindowsForms/WebBrowserNavigateErrorEventArgs.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET.WindowsForms/WebBrowserNavigateErrorEventArgs.cs
+    startLine: 22
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  syntax:
+    content: 'public class WebBrowserNavigateErrorEventArgs : CancelEventArgs'
+    content.vb: Public Class WebBrowserNavigateErrorEventArgs Inherits CancelEventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  - System.ComponentModel.CancelEventArgs
+  inheritedMembers:
+  - System.ComponentModel.CancelEventArgs.Cancel
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  platform:
+  - winform40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.#ctor(System.String,System.String,System.Int32,System.Object)
+  id: '#ctor(System.String,System.String,System.Int32,System.Object)'
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs
+  langs:
+  - csharp
+  - vb
+  name: WebBrowserNavigateErrorEventArgs(String, String, Int32, Object)
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.WebBrowserNavigateErrorEventArgs(System.String, System.String, System.Int32, System.Object)
+  type: Constructor
+  source:
+    remote:
+      path: src/ADAL.NET.WindowsForms/WebBrowserNavigateErrorEventArgs.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET.WindowsForms/WebBrowserNavigateErrorEventArgs.cs
+    startLine: 31
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  syntax:
+    content: public WebBrowserNavigateErrorEventArgs(string url, string targetFrameName, int statusCode, object webBrowserActiveXInstance)
+    content.vb: Public Sub New(url As String, targetFrameName As String, statusCode As Integer, webBrowserActiveXInstance As Object)
+    parameters:
+    - id: url
+      type: System.String
+    - id: targetFrameName
+      type: System.String
+    - id: statusCode
+      type: System.Int32
+    - id: webBrowserActiveXInstance
+      type: System.Object
+  platform:
+  - winform40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.TargetFrameName
+  id: TargetFrameName
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs
+  langs:
+  - csharp
+  - vb
+  name: TargetFrameName
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.TargetFrameName
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.NET.WindowsForms/WebBrowserNavigateErrorEventArgs.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET.WindowsForms/WebBrowserNavigateErrorEventArgs.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  syntax:
+    content: public string TargetFrameName { get; }
+    content.vb: Public ReadOnly Property TargetFrameName As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - winform40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.Url
+  id: Url
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Url
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.Url
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.NET.WindowsForms/WebBrowserNavigateErrorEventArgs.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET.WindowsForms/WebBrowserNavigateErrorEventArgs.cs
+    startLine: 49
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  syntax:
+    content: public string Url { get; }
+    content.vb: Public ReadOnly Property Url As String
+    parameters: []
+    return:
+      type: System.String
+  platform:
+  - winform40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.StatusCode
+  id: StatusCode
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs
+  langs:
+  - csharp
+  - vb
+  name: StatusCode
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.StatusCode
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.NET.WindowsForms/WebBrowserNavigateErrorEventArgs.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET.WindowsForms/WebBrowserNavigateErrorEventArgs.cs
+    startLine: 59
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  syntax:
+    content: public int StatusCode { get; }
+    content.vb: Public ReadOnly Property StatusCode As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  platform:
+  - winform40
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.WebBrowserActiveXInstance
+  id: WebBrowserActiveXInstance
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs
+  langs:
+  - csharp
+  - vb
+  name: WebBrowserActiveXInstance
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs.WebBrowserActiveXInstance
+  type: Property
+  source:
+    remote:
+      path: src/ADAL.NET.WindowsForms/WebBrowserNavigateErrorEventArgs.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET.WindowsForms/WebBrowserNavigateErrorEventArgs.cs
+    startLine: 67
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  syntax:
+    content: public object WebBrowserActiveXInstance { get; }
+    content.vb: Public ReadOnly Property WebBrowserActiveXInstance As Object
+    parameters: []
+    return:
+      type: System.Object
+  platform:
+  - winform40
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  fullName: System.EventArgs
+- uid: System.ComponentModel.CancelEventArgs
+  parent: System.ComponentModel
+  isExternal: true
+  name: CancelEventArgs
+  fullName: System.ComponentModel.CancelEventArgs
+- uid: System.ComponentModel.CancelEventArgs.Cancel
+  parent: System.ComponentModel.CancelEventArgs
+  isExternal: true
+  name: Cancel
+  fullName: System.ComponentModel.CancelEventArgs.Cancel
+- uid: System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+metadata: {}

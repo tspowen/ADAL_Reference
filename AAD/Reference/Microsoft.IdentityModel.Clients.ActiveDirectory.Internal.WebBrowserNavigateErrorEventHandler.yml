@@ -1,0 +1,51 @@
+items:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventHandler
+  id: WebBrowserNavigateErrorEventHandler
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: WebBrowserNavigateErrorEventHandler
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: src/ADAL.NET.WindowsForms/CustomWebBrowser.cs
+      branch: master
+      repo: https://github.com/AzureAD/azure-activedirectory-library-for-dotnet.git
+    path: src/ADAL.NET.WindowsForms/CustomWebBrowser.cs
+    startLine: 253
+  assemblies:
+  - Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms
+  namespace: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  syntax:
+    content: public delegate void WebBrowserNavigateErrorEventHandler(object sender, WebBrowserNavigateErrorEventArgs e);
+    content.vb: Public Delegate Sub WebBrowserNavigateErrorEventHandler(sender As Object, e As WebBrowserNavigateErrorEventArgs)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs
+  platform:
+  - winform40
+references:
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  isExternal: false
+  name: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs
+  parent: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal
+  isExternal: false
+  name: WebBrowserNavigateErrorEventArgs
+  fullName: Microsoft.IdentityModel.Clients.ActiveDirectory.Internal.WebBrowserNavigateErrorEventArgs
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+metadata: {}
